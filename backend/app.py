@@ -4,6 +4,7 @@ import joblib
 import io
 
 app = Flask(__name__)
+superkart_api = app  # Alias to guarantee compatibility with both 'app:app' and 'app:superkart_api'
 
 # Load the model pipeline
 model = joblib.load('superkart_model.joblib')
